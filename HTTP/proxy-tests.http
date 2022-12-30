@@ -1,0 +1,10 @@
+@Base= http://localhost:
+@Port= 5276
+@Path= /api/
+
+### PROXY HOME CALL
+GET {{Base}}{{Port}}
+
+#### PROXY CALL API LOAD BALANCING
+
+GET {{Base}}{{Port}}{{Path}} HTTP/1.1
